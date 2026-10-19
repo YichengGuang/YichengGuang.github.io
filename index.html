@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yicheng Guang</title>
+<meta name="description" content="Yicheng Guang, Ph.D. student in Computer Science at the University of Colorado Boulder. Quantum control systems, real-time quantum error correction decoding, and fault-tolerant quantum architecture.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --text: #1d1f23;
+    --muted: #5d636e;
+    --rule: #e3e3de;
+    --accent: #1f5fa8;
+    --tag-bg: #eef2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171b;
+      --text: #e6e7ea;
+      --muted: #9aa1ad;
+      --rule: #2b2f36;
+      --accent: #7fb2ec;
+      --tag-bg: #222832;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 820px; margin: 0 auto; padding: 56px 16px 40px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; }
+
+  header { display: flex; gap: 32px; align-items: center; }
+  .photo {
+    flex: none; width: 150px; height: 150px; border-radius: 50%;
+    object-fit: cover; background: var(--tag-bg);
+    display: grid; place-items: center;
+    font: 600 44px "Source Serif 4", Georgia, serif; color: var(--muted);
+  }
+  h1 { font-size: 2.3rem; margin: 0 0 4px; line-height: 1.2; }
+  .role { margin: 0; color: var(--muted); }
+  .links { margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-weight: 500; }
+
+  nav { margin: 36px 0 8px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  nav ul { margin: 0; padding: 10px 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: .92rem; }
+  nav a { color: var(--muted); }
+
+  section { padding-top: 28px; }
+  h2 { font-size: 1.45rem; margin: 0 0 12px; }
+  h3 { font-size: 1.1rem; margin: 22px 0 6px; }
+  p { margin: 0 0 12px; }
+  .interests { color: var(--muted); }
+
+  .news { list-style: none; margin: 0; padding: 0; }
+  .news li { display: grid; grid-template-columns: 88px 1fr; gap: 12px; padding: 3px 0; }
+  .news time { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  .project { margin: 0 0 18px; }
+  .project h4 { margin: 0 0 2px; font-size: 1rem; }
+  .project p { margin: 0 0 4px; }
+  .tag {
+    display: inline-block; margin-left: 6px; padding: 0 8px; border-radius: 10px;
+    background: var(--tag-bg); color: var(--muted); font-size: .78rem; font-weight: 500; vertical-align: 2px;
+  }
+  .more { font-size: .92rem; font-weight: 500; }
+  .more a + a::before { content: "·"; color: var(--muted); margin: 0 8px; }
+
+  .pubs { list-style: none; margin: 0; padding: 0; }
+  .pubs li { margin: 0 0 16px; }
+  .pub-title { font-weight: 600; }
+  .pub-authors, .pub-venue { display: block; }
+  .pub-venue { font-style: italic; color: var(--muted); }
+  .me { font-weight: 600; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+
+  .plain { list-style: none; margin: 0; padding: 0; }
+  .plain li { padding: 3px 0; }
+  .row { display: flex; justify-content: space-between; gap: 16px; }
+  .row span:last-child { color: var(--muted); white-space: nowrap; }
+
+  footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; }
+
+  @media (max-width: 600px) {
+    main { padding-top: 32px; }
+    header { flex-direction: column; align-items: flex-start; gap: 18px; }
+    .photo { width: 112px; height: 112px; font-size: 34px; }
+    h1 { font-size: 1.9rem; }
+    .news li { grid-template-columns: 1fr; gap: 0; padding: 6px 0; }
+    .row { flex-direction: column; gap: 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <!-- Replace with <img class="photo" src="photo.jpg" alt="Yicheng Guang"> once a photo is added. -->
+  <div class="photo" aria-hidden="true">YG</div>
+  <div>
+    <h1>Yicheng Guang</h1>
+    <p class="role">Ph.D. student in Computer Science, University of Colorado Boulder</p>
+    <ul class="links">
+      <li><a href="mailto:yicheng.guang@colorado.edu">yicheng.guang@colorado.edu</a></li>
+      <li><a href="https://github.com/YichengGuang">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#education">Education</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I am a Ph.D. student in Computer Science at the University of Colorado Boulder, advised by
+    <a href="https://www.colorado.edu/cs/yueqi-chen">Prof. Yueqi Chen</a>. I build the classical machinery of
+    fault-tolerant quantum computers, from the control hardware that drives and reads out the qubits to the decoders
+    that turn syndromes into corrections.</p>
+  <p>I am also an affiliate of the <a href="https://gitlab.com/LBL-QubiC">QubiC</a> team at Lawrence Berkeley National
+    Laboratory, where I lead the development of QubiC 3.0, and I work on quantum error correction decoding with
+    <a href="https://jila.colorado.edu/people/xun-gao">Prof. Xun Gao</a>'s group (Physics and JILA, CU Boulder).</p>
+  <p>Before CU Boulder, I received my B.S. in Computer Science from Nanjing University and spent a semester as an
+    exchange student at the University of Hong Kong.</p>
+  <p class="interests"><strong>Interests:</strong> quantum control systems · real-time quantum error correction ·
+    fault-tolerant quantum architecture</p>
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">
+    <li><time datetime="2026-10">Oct 2026</time><span>Ant-Q v3 is on <a href="https://arxiv.org/abs/2608.06318">arXiv</a>,
+      with code, data and bitstreams on <a href="https://zenodo.org/records/23250200">Zenodo</a>.</span></li>
+    <li><time datetime="2025">2025</time><span>Our paper on quantum computing for classical program analysis appears at
+      IEEE QCE 2025.</span></li>
+    <li><time datetime="2025-06">Jun 2025</time><span>Presented quantum boundary checking at the
+      <a href="https://wsslab.org/workshops/qsys25/index.html">ACM QSys '25</a> workshop in Anaheim, CA.</span></li>
+    <li><time datetime="2024-08">Aug 2024</time><span>Started my Ph.D. at CU Boulder. SeaK appears at USENIX Security 2024.</span></li>
+  </ul>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+
+  <h3>Quantum control systems</h3>
+  <div class="project">
+    <h4>Ant-Q: breaking memory bottlenecks in quantum control systems</h4>
+    <p>A memory hierarchy for the QubiC control system on AMD RFSoC boards: on-board DDR4 holds the commands,
+      ping-pong buffers on chip feed each core, and readout streams to the host while the experiment runs. For circuits
+      with at least 1,000 shots, the board time spent outside circuit execution drops from 18.9–104.5% to at most
+      0.53%. On a transmon at the <a href="https://aqt.lbl.gov">Advanced Quantum Testbed</a> it ran a
+      5,101-Clifford randomized-benchmarking sequence and uninterrupted 100&nbsp;s Ramsey records. Integrated into
+      QubiC's open-source gateware and software.</p>
+    <p class="more"><a href="https://arxiv.org/abs/2608.06318">paper</a><a href="https://github.com/a85tract/Ant-Q">code</a><a href="https://zenodo.org/records/23250200">artifact</a></p>
+  </div>
+  <div class="project">
+    <h4>QubiC 3.0 <span class="tag">in progress</span></h4>
+    <p>The next generation of QubiC. I lead its development, starting with instruction streaming from DDR4 and a
+      readout path to DDR4 in the RISC-Q control SoC.</p>
+  </div>
+
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <ul class="pubs">
+    <li>
+      <span class="pub-title">Breaking Memory Bottlenecks in Quantum Control Systems for More Precise Experiments and Higher Throughput Computing</span>
+      <span class="pub-authors"><span class="me">Yicheng Guang</span>, Neel Vora, Yilun Xu, Yueqi Chen, Gang Huang</span>
+      <span class="pub-venue">arXiv:2608.06318, 2026</span>
+      <span class="more"><a href="https://arxiv.org/abs/2608.06318">arXiv</a><a href="https://github.com/a85tract/Ant-Q">code</a><a href="https://zenodo.org/records/23250200">artifact</a></span>
+    </li>
+    <li>
+      <span class="pub-title">On the Potential of Quantum Computing in Classical Program Analysis</span>
+      <span class="pub-authors"><span class="me">Yicheng Guang</span>, Pietro Zanotta, Kai Zhou, Yueqi Chen, Ramin Ayanzadeh</span>
+      <span class="pub-venue">IEEE International Conference on Quantum Computing and Engineering (QCE), 2025</span>
+      <span class="more"><a href="https://arxiv.org/abs/2510.11045">arXiv</a></span>
+    </li>
+    <li>
+      <span class="pub-title">Quantum Methods for Boundary Checking in Classical Programs</span>
+      <span class="pub-authors"><span class="me">Yicheng Guang</span>, Pietro Zanotta, Kai Zhou, Yueqi Chen, Ramin Ayanzadeh</span>
+      <span class="pub-venue">ACM International Workshop on Exploring Sensing, Computing, and Communication Systems with Quantum (QSys), co-located with MobiSys 2025</span>
+      <span class="more"><a href="https://wsslab.org/workshops/qsys25/index.html">workshop</a></span>
+    </li>
+    <li>
+      <span class="pub-title">SeaK: Rethinking the Design of a Secure Allocator for OS Kernel</span>
+      <span class="pub-authors">Zicheng Wang, <span class="me">Yicheng Guang</span>, Yueqi Chen, Zhenpeng Lin, Michael Le, Dang K Le, Dan Williams, Xinyu Xing, Zhongshu Gu, Hani Jamjoom</span>
+      <span class="pub-venue">USENIX Security Symposium, 2024</span>
+      <span class="more"><a href="https://www.usenix.org/conference/usenixsecurity24/presentation/wang-zicheng">paper</a></span>
+    </li>
+  </ul>
+</section>
+
+<section id="service">
+  <h2>Service</h2>
+  <ul class="plain">
+    <li>Reviewer, IEEE International Conference on Quantum Computing and Engineering (QCE), 2025 and 2026</li>
+    <li>Reviewer, <i>Quantum Science and Technology</i></li>
+    <li>Reviewer, <i>Integration, the VLSI Journal</i></li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul class="plain">
+    <li class="row"><span>Ph.D. in Computer Science, University of Colorado Boulder</span><span>2024 – present</span></li>
+    <li class="row"><span>B.S. in Computer Science, Nanjing University</span><span>2020 – 2024</span></li>
+    <li class="row"><span>Exchange student, The University of Hong Kong</span><span>Spring 2022</span></li>
+  </ul>
+</section>
+
+<footer>Last updated October 2026</footer>
+
+</main>
+</body>
+</html>
