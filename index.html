@@ -156,7 +156,7 @@
 
 <section id="about">
   <h2>About</h2>
-  <p>I am a Ph.D. student in Computer Science at the University of Colorado Boulder, advised by
+  <p>I am a third-year Ph.D. student in Computer Science at the University of Colorado Boulder, advised by
     <a href="https://www.colorado.edu/cs/yueqi-chen">Prof. Yueqi Chen</a>. I build the classical systems that
     fault-tolerant quantum computers depend on: the control hardware that drives and reads out the qubits, and the
     decoders that turn error syndromes into corrections in real time.</p>
@@ -175,8 +175,16 @@
 <section id="news">
   <h2>News</h2>
   <ul class="news">
-    <li><time datetime="2026-10">Oct 2026</time><span><b>CoDecoder</b> is on <a href="https://arxiv.org/abs/2610.28748">arXiv</a>,
-      with code, trained weights and test records on <a href="https://github.com/a85tract/CoDecoder">GitHub</a>.</span></li>
+    <li><time datetime="2026-10">Oct 2026</time><span><b>CoDecoder</b> is on <a href="https://arxiv.org/abs/2610.28748">arXiv</a>.
+      A small GPU network in front of an existing decoder makes it both faster and more accurate:
+      <b>6.4&#8288;–&#8288;31.4% fewer failures than correlated matching</b> on surface codes (d = 7&#8288;–&#8288;17) and
+      <b>22&#8288;–&#8288;50% fewer than full-DEM Relay-BP</b> on bivariate-bicycle codes, with <b>2.3&#8288;–&#8288;124× speed-ups</b>.
+      With the neural decoder Cascade as its fallback, it makes <b>14&#8288;–&#8288;18% fewer failures than Cascade alone</b> on the
+      [[72,12,6]] code. Paired with correlated matching, it decodes the surface code at p = 0.6% up to d = 11 in
+      <b>under 1&nbsp;µs per syndrome round</b> in batches, about the round period of today's superconducting processors.
+      To our knowledge, it is <b>the first open-source design that brings a strong decoder below 1&nbsp;µs per round</b>
+      at a physical error rate as high as 0.6% while reducing its failures. Code, trained weights and test records are
+      on <a href="https://github.com/a85tract/CoDecoder">GitHub</a>.</span></li>
     <li><time datetime="2026-10">Oct 2026</time><span><b>Ant-Q</b> v3 is on <a href="https://arxiv.org/abs/2608.06318">arXiv</a>,
       with code, data and bitstreams on <a href="https://doi.org/10.5281/zenodo.23250200">Zenodo</a>.</span></li>
     <li><time datetime="2025-08">Aug 2025</time><span>Our paper <b>QEX</b> on quantum computing for classical program
