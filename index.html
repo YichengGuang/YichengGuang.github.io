@@ -175,6 +175,8 @@
 <section id="news">
   <h2>News</h2>
   <ul class="news">
+    <li><time datetime="2026-10">Oct 2026</time><span><b>CoDecoder</b> is on <a href="https://arxiv.org/abs/2610.28748">arXiv</a>,
+      with code, trained weights and test records on <a href="https://github.com/a85tract/CoDecoder">GitHub</a>.</span></li>
     <li><time datetime="2026-10">Oct 2026</time><span><b>Ant-Q</b> v3 is on <a href="https://arxiv.org/abs/2608.06318">arXiv</a>,
       with code, data and bitstreams on <a href="https://doi.org/10.5281/zenodo.23250200">Zenodo</a>.</span></li>
     <li><time datetime="2025-08">Aug 2025</time><span>Our paper <b>QEX</b> on quantum computing for classical program
@@ -187,6 +189,31 @@
 <section id="publications">
   <h2>Publications</h2>
   <ul class="pubs">
+
+    <li class="pub">
+      <span class="badge">arXiv</span>
+      <div>
+        <a class="pub-title" href="https://arxiv.org/abs/2610.28748">CoDecoder: Make Quantum Decoders Up to 100x Faster and Even More Accurate</a>
+        <span class="pub-authors"><span class="me">Yicheng Guang</span>, Yuliang Xiong, Xun Gao, Yueqi Chen</span>
+        <span class="pub-venue">arXiv:2610.28748, 2026</span>
+        <div class="pub-links">
+          <a href="https://arxiv.org/pdf/2610.28748">PDF</a>
+          <a href="https://github.com/a85tract/CoDecoder">Code</a>
+          <details><summary>BibTeX</summary><pre>@misc{guang2026codecoder,
+  title         = {CoDecoder: Make Quantum Decoders Up to 100x Faster and Even More Accurate},
+  author        = {Guang, Yicheng and Xiong, Yuliang and Gao, Xun and Chen, Yueqi},
+  year          = {2026},
+  eprint        = {2610.28748},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph}
+}</pre></details>
+        </div>
+        <p class="pub-summary">CoDecoder is a small neural frontend that composes with an existing decoder: it keeps the
+          shots it is confident about and routes the rest to the unchanged fallback. In registered tests under
+          circuit-level noise, the composition makes 6.4–31.4% fewer failures than correlated matching on surface codes
+          and 22–50% fewer than full-DEM Relay-BP on bivariate-bicycle codes, with 2.3–124× speed-ups.</p>
+      </div>
+    </li>
 
     <li class="pub">
       <span class="badge">arXiv</span>
