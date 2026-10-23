@@ -177,7 +177,8 @@
   <ul class="news">
     <li><time datetime="2026-10">Oct 2026</time><span><b>CoDecoder</b> is on <a href="https://arxiv.org/abs/2610.28748">arXiv</a>: a small GPU network that makes existing
       decoders faster and more accurate, with <b>6.4&#8288;–&#8288;31.4% fewer failures than correlated matching</b> on surface codes,
-      <b>22&#8288;–&#8288;50% fewer than full-DEM Relay-BP</b> on BB codes, and <b>2.3&#8288;–&#8288;124× speed-ups</b>. In front of the neural decoder Cascade (our re-implementation), it cuts
+      <b>22&#8288;–&#8288;50% fewer than full-DEM Relay-BP</b> on BB codes, and <b>2.3&#8288;–&#8288;124× speed-ups</b>. Even on its own, the network beats the usual fallbacks, with <b>1.5&#8288;–&#8288;4.8× fewer failures than
+      PyMatching</b> and <b>49&#8288;–&#8288;69% fewer than BP-OSD and sector Relay-BP</b>, while running faster. In front of the neural decoder Cascade (our re-implementation), it cuts
       <b>Cascade's failures by 14&#8288;–&#8288;18%</b> on BB72 while running <b>3&#8288;–&#8288;10× faster</b>. To our knowledge, it is
       <b>the first open-source design that brings a strong decoder below 1&nbsp;µs per round</b> at a physical error rate
       as high as 0.6% while reducing its failures. <a href="https://github.com/a85tract/CoDecoder">Code</a></span></li>
